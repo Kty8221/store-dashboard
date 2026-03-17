@@ -1,16 +1,50 @@
-# React + Vite
+# 스마트 편의점 운영 대시보드
+대학교 내 편의점 운영자 및 관리자를 위한 웹 기반 대시보드 프로젝트입니다.  
+재고 현황, AI 예측 수요, 발주 추천 정보를 한눈에 확인할 수 있도록 구성하는 것을 목표로 합니다.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 프로젝트 소개
+기존 편의점 운영에서는 시간대별 수요 변화를 정확히 반영하지 못해  
+품절, 과잉 재고, 비효율적인 발주 문제가 발생할 수 있습니다.
 
-Currently, two official plugins are available:
+이 프로젝트는 대학교 캠퍼스 내 편의점을 대상으로,  
+운영자와 관리자가 보다 효율적으로 재고를 관리하고 발주 결정을 내릴 수 있도록 돕는  
+대시보드형 웹 서비스를 구현하는 것을 목표로 합니다.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 주요 기능
+- 운영자 로그인 화면
+- 재고 현황 패널
+- AI 예측 수요 리포트
+- 발주 추천 카드
 
-## React Compiler
+## 기술 스택
+- React
+- Vite
+- CSS
+- 추후 적용 예정
+  - Tailwind CSS
+  - Chart.js 또는 Recharts
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 현재 구현 내용
+- React 프로젝트 생성
+- 로그인 페이지 분리
+- 대시보드 페이지 분리
+- CSS 파일 분리
+- 대시보드 카드 3개 컴포넌트 분리
+  - 재고 현황 카드
+  - AI 예측 수요 카드
+  - 발주 추천 카드
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 폴더 구조
+```bash
+src/
+ ┣ LoginPage.jsx
+ ┣ LoginPage.css
+ ┣ DashboardPage.jsx
+ ┣ DashboardPage.css
+ ┣ InventoryCard.jsx
+ ┣ ForecastCard.jsx
+ ┣ OrderCard.jsx
+ ┣ App.jsx
+ ┣ App.css
+ ┣ index.css
+ ┗ main.jsx
