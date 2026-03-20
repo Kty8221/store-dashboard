@@ -123,7 +123,7 @@
   font-weight: 700;
   cursor: pointer;
   transition: background-color 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
-}
+}   
 
 .login-button:hover {
   background-color: #3d5f84;
